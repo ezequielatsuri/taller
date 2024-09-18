@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\API;
+namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -138,4 +138,6 @@ class ProductoController extends Controller
         // Eliminar el producto
         $producto->delete();
 
-        return response()->json(['message' => 'Pro
+        return response()->json(['message' => 'Producto eliminado exitosamente'], 200);
+    }
+}
